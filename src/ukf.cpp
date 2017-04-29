@@ -55,6 +55,8 @@ UKF::UKF() {
     
     
     Xsig_pred_ = MatrixXd(15, 5);
+    is_initialized_ = false;
+    
 }
 
 UKF::~UKF() {}

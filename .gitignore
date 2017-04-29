@@ -10,3 +10,14 @@ ide_profiles/xcode/UnscentedKF.build/
 ide_profiles/xcode/CMakeFiles/
 ide_profiles/xcode/CMakeScripts
 kalman_tracker_mac.app
+data_in.txt
+
+data_in.txt
+
+data_out.txt
+
+data_out.txt
+
+*.xcuserstate
+
+*.xcbkptlist
