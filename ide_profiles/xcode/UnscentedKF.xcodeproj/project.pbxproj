@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CE66398A6FA3437382D0DEA9 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 452BD6CEECBC431AA4FF0FD4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				0304ADA6544A47449E7D78CB /* CMake Rules */,
+			);
+			dependencies = (
+				EE6AA1F7460546828DC71DEF /* PBXTargetDependency */,
+				F7A95B6DF7EC4C00AEB26C9D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D61C903E8FBC4F01A45CB48C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F16786AE53F5401096774926 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				5BACD8F342A744D2898E464C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2ED5F210A9644D63B2A5DC81 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/ukf.cpp */ = {isa = PBXBuildFile; fileRef = D795EA4F5F8044C3A9DA2B11 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/ukf.cpp */; };
+		3A9ABA2444734F85ADBC7751 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 297390A85300497C91E9EE0E /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */; };
+		40F2A5246205445CBF572320 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 2EF6B17CF22F42E99DFE2AB0 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/main.cpp */; };
+		A78B2E9377D34C60B69989AE /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/tools.cpp */ = {isa = PBXBuildFile; fileRef = FB9F68082DCB43D2980DDC80 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/tools.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		32C6F1C7C44C476DB71535B1 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		4F4E190A6915402BB7660B6A = {
+			isa = PBXBuildStyle;
+		};
+		53ECC913EF364C11BF949FE8 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		97B2CF145050404A8712B2FB /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		AB637BBE368E4D1F9D6412A6 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		A14FA1FBBA8048C786651285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84916C7E107B47EC8B5D951A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D61C903E8FBC4F01A45CB48C;
+			remoteInfo = ZERO_CHECK;
+		};
+		B408B1F5645A436E875F0E62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84916C7E107B47EC8B5D951A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D61C903E8FBC4F01A45CB48C;
+			remoteInfo = ZERO_CHECK;
+		};
+		D3C6492A71884759B72278CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84916C7E107B47EC8B5D951A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6E9E1E603DF46AE94B82122;
+			remoteInfo = UnscentedKF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		297390A85300497C91E9EE0E /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2EF6B17CF22F42E99DFE2AB0 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		D782429AEFD94722BD773561 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D795EA4F5F8044C3A9DA2B11 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/ukf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ukf.cpp; path = src/ukf.cpp; sourceTree = SOURCE_ROOT; };
+		F0296FAB50EA4638B35AF5D2 /* UnscentedKF */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = UnscentedKF; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DF409EE3C84AAFB13D4A28 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FB9F68082DCB43D2980DDC80 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/tools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tools.cpp; path = src/tools.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		121DEBAB5A204C65865C6364 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				48D1C1568F884B71A7C6425A /* CMake Rules */,
+				F5DF409EE3C84AAFB13D4A28 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		1B62E224433D48839863A86E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EF6B17CF22F42E99DFE2AB0 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/main.cpp */,
+				FB9F68082DCB43D2980DDC80 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/tools.cpp */,
+				D795EA4F5F8044C3A9DA2B11 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/ukf.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1E2BFCA1F6EF414386CBB91E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		48D1C1568F884B71A7C6425A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4986A237D0454B5B85FAF752 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		61A63D7EED1A4F968A22037B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0296FAB50EA4638B35AF5D2 /* UnscentedKF */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		620B96E9AD2542A7B505745A = {
+			isa = PBXGroup;
+			children = (
+				6D70B477DDE446D8883C9FC5 /* Sources */,
+				1E2BFCA1F6EF414386CBB91E /* Resources */,
+				61A63D7EED1A4F968A22037B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D70B477DDE446D8883C9FC5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9B33B940829D4B6081D70F27 /* UnscentedKF */,
+				CDBD247CF19A4C2497417E85 /* ALL_BUILD */,
+				121DEBAB5A204C65865C6364 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		9B33B940829D4B6081D70F27 /* UnscentedKF */ = {
+			isa = PBXGroup;
+			children = (
+				1B62E224433D48839863A86E /* Source Files */,
+				297390A85300497C91E9EE0E /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */,
+			);
+			name = UnscentedKF;
+			sourceTree = "<group>";
+		};
+		CDBD247CF19A4C2497417E85 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4986A237D0454B5B85FAF752 /* CMake Rules */,
+				D782429AEFD94722BD773561 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6E9E1E603DF46AE94B82122 /* UnscentedKF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F64FA62CA094319B25BCD63 /* Build configuration list for PBXNativeTarget "UnscentedKF" */;
+			buildPhases = (
+				D52F4DF942CF4045AA061175 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4CE3955112411BB674F5C0 /* PBXTargetDependency */,
+			);
+			name = UnscentedKF;
+			productName = UnscentedKF;
+			productReference = F0296FAB50EA4638B35AF5D2 /* UnscentedKF */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84916C7E107B47EC8B5D951A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 15E9319BA2D241ABB2B6E479 /* Build configuration list for PBXProject "UnscentedKF" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				97B2CF145050404A8712B2FB /* Debug */,
+				AB637BBE368E4D1F9D6412A6 /* Release */,
+				53ECC913EF364C11BF949FE8 /* MinSizeRel */,
+				32C6F1C7C44C476DB71535B1 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 620B96E9AD2542A7B505745A;
+			projectDirPath = ../../;
+			projectRoot = "";
+			targets = (
+				CE66398A6FA3437382D0DEA9 /* ALL_BUILD */,
+				F6E9E1E603DF46AE94B82122 /* UnscentedKF */,
+				D61C903E8FBC4F01A45CB48C /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0304ADA6544A47449E7D78CB /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode -f /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		133333F3045C4C9092A73D29 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		31337EE1090040F39F350E0D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5BACD8F342A744D2898E464C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode -f /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D52F4DF942CF4045AA061175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F2A5246205445CBF572320 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/main.cpp */,
+				A78B2E9377D34C60B69989AE /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/tools.cpp */,
+				2ED5F210A9644D63B2A5DC81 /* /Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/src/ukf.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED4CE3955112411BB674F5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D61C903E8FBC4F01A45CB48C /* ZERO_CHECK */;
+			targetProxy = B408B1F5645A436E875F0E62 /* PBXContainerItemProxy */;
+		};
+		EE6AA1F7460546828DC71DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6E9E1E603DF46AE94B82122 /* UnscentedKF */;
+			targetProxy = D3C6492A71884759B72278CF /* PBXContainerItemProxy */;
+		};
+		F7A95B6DF7EC4C00AEB26C9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D61C903E8FBC4F01A45CB48C /* ZERO_CHECK */;
+			targetProxy = A14FA1FBBA8048C786651285 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19D9B8DD74964DAD844C7C02 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		1B32A79FAAFE4D90B364F06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		249C05B694F142518C1C3783 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnscentedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3B1F8EF8FB0C401A8DCAC4DF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		46B5E39FE60041D48D5B31A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		51D7747EDB114A0C9CF06064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5A6D234A69DF4B91A861950E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnscentedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8E2295CF46A94A0B8FE39AB2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnscentedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9E327D9DADF14113B40011E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "     -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnscentedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A18D37BA798E444BB5E1C35E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B0941444B954482499302697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode/build";
+			};
+			name = Release;
+		};
+		BBE32214C9424A0F8D025F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode/build";
+			};
+			name = Debug;
+		};
+		D2F2F57EDEE14A0AB51C9D33 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D6B3C8D1637546A2B6236386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E91643BECA904247B9C790FB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F05CD4C5D7AF4F5DA6585C6E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/zhongming/APP/Udacity-SelfDrvingCar/CarND-Unscented-Kalman-Filter-Project/ide_profiles/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15E9319BA2D241ABB2B6E479 /* Build configuration list for PBXProject "UnscentedKF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE32214C9424A0F8D025F26 /* Debug */,
+				B0941444B954482499302697 /* Release */,
+				19D9B8DD74964DAD844C7C02 /* MinSizeRel */,
+				F05CD4C5D7AF4F5DA6585C6E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		452BD6CEECBC431AA4FF0FD4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B3C8D1637546A2B6236386 /* Debug */,
+				46B5E39FE60041D48D5B31A1 /* Release */,
+				E91643BECA904247B9C790FB /* MinSizeRel */,
+				A18D37BA798E444BB5E1C35E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F64FA62CA094319B25BCD63 /* Build configuration list for PBXNativeTarget "UnscentedKF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E327D9DADF14113B40011E7 /* Debug */,
+				5A6D234A69DF4B91A861950E /* Release */,
+				8E2295CF46A94A0B8FE39AB2 /* MinSizeRel */,
+				249C05B694F142518C1C3783 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F16786AE53F5401096774926 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51D7747EDB114A0C9CF06064 /* Debug */,
+				1B32A79FAAFE4D90B364F06F /* Release */,
+				3B1F8EF8FB0C401A8DCAC4DF /* MinSizeRel */,
+				D2F2F57EDEE14A0AB51C9D33 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84916C7E107B47EC8B5D951A /* Project object */;
+}

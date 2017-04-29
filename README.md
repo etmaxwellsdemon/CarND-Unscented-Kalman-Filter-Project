@@ -3,6 +3,22 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+[image0]: ./figure_1.png "Results"
+
+## Project Instruction
+### Files
+* I've modified the main output as csv.
+* Testing output of `obj_pose-laser-radar-synthetic-input` is at `/data/output.csv`. The result meet the requirement to the project rubric.
+
+### Conclusion
+The RSME to the test data is: `0.0645957,0.0835566,0.334676,0.219088`, which 
+meet the requirement to the project rubric. We can see easily that data with sensor fusion runs the best result.
+
+What's more, I've visualized the NIS, ground truth, sensor measurements bellow based on the [Jacobs](https://github.com/jpthalman/CarND-Term2/blob/master/UnscentedKalmanFilter/visualize.py) python file.
+
+![alt text][image0]
+
+
 ## Dependencies
 
 * cmake >= v3.5

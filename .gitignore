@@ -3,3 +3,10 @@
 
 # build files
 build/
+
+
+ide_profiles/xcode/Debug/
+ide_profiles/xcode/UnscentedKF.build/
+ide_profiles/xcode/CMakeFiles/
+ide_profiles/xcode/CMakeScripts
+kalman_tracker_mac.app

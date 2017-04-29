@@ -142,19 +142,21 @@ int main(int argc, char* argv[]) {
   size_t number_of_measurements = measurement_pack_list.size();
 
   // column names for output file
-  out_file_ << "time_stamp" << "\t";  
-  out_file_ << "px_state" << "\t";
-  out_file_ << "py_state" << "\t";
-  out_file_ << "v_state" << "\t";
-  out_file_ << "yaw_angle_state" << "\t";
-  out_file_ << "yaw_rate_state" << "\t";
-  out_file_ << "sensor_type" << "\t";
-  out_file_ << "NIS" << "\t";  
-  out_file_ << "px_measured" << "\t";
-  out_file_ << "py_measured" << "\t";
-  out_file_ << "px_ground_truth" << "\t";
-  out_file_ << "py_ground_truth" << "\t";
-  out_file_ << "vx_ground_truth" << "\t";
+  out_file_ << "time_stamp,";
+  out_file_ << "px_state,";
+  out_file_ << "py_state,";
+  out_file_ << "v_state,";
+  out_file_ << "yaw_angle_state,";
+  out_file_ << "yaw_rate_state,";
+out_file_ << "vx_state,";
+    out_file_ << "vy_state,";
+  out_file_ << "sensor_type,";
+  out_file_ << "NIS,";
+  out_file_ << "px_measured,";
+  out_file_ << "py_measured,";
+  out_file_ << "px_ground_truth,";
+  out_file_ << "py_ground_truth,";
+  out_file_ << "vx_ground_truth,";
   out_file_ << "vy_ground_truth" << "\n";
 
 
@@ -163,45 +165,47 @@ int main(int argc, char* argv[]) {
     ukf.ProcessMeasurement(measurement_pack_list[k]);
 
     // timestamp
-    out_file_ << measurement_pack_list[k].timestamp_ << "\t"; // pos1 - est
+    out_file_ << measurement_pack_list[k].timestamp_ << ","; // pos1 - est
 
     // output the state vector
-    out_file_ << ukf.x_(0) << "\t"; // pos1 - est
-    out_file_ << ukf.x_(1) << "\t"; // pos2 - est
-    out_file_ << ukf.x_(2) << "\t"; // vel_abs -est
-    out_file_ << ukf.x_(3) << "\t"; // yaw_angle -est
-    out_file_ << ukf.x_(4) << "\t"; // yaw_rate -est
+    out_file_ << ukf.x_(0) << ","; // pos1 - est
+    out_file_ << ukf.x_(1) << ","; // pos2 - est
+    out_file_ << ukf.x_(2) << ","; // vel_abs -est
+    out_file_ << ukf.x_(3) << ","; // yaw_angle -est
+    out_file_ << ukf.x_(4) << ","; // yaw_rate -est
+      out_file_ << ukf.x_(2)*cos(ukf.x_(3)) << ","; // vx
+      out_file_ << ukf.x_(2)*sin(ukf.x_(3)) << ","; // vy
 
     // output lidar and radar specific data
     if (measurement_pack_list[k].sensor_type_ == MeasurementPackage::LASER) {
       // sensor type
-      out_file_ << "lidar" << "\t";
+      out_file_ << "lidar" << ",";
 
       // NIS value
-      out_file_ << ukf.NIS_laser_ << "\t";
+      out_file_ << ukf.NIS_laser_ << ",";
 
       // output the lidar sensor measurement px and py
-      out_file_ << measurement_pack_list[k].raw_measurements_(0) << "\t";
-      out_file_ << measurement_pack_list[k].raw_measurements_(1) << "\t";
+      out_file_ << measurement_pack_list[k].raw_measurements_(0) << ",";
+      out_file_ << measurement_pack_list[k].raw_measurements_(1) << ",";
 
     } else if (measurement_pack_list[k].sensor_type_ == MeasurementPackage::RADAR) {
       // sensor type
-      out_file_ << "radar" << "\t";
+      out_file_ << "radar" << ",";
 
       // NIS value
-      out_file_ << ukf.NIS_radar_ << "\t";
+      out_file_ << ukf.NIS_radar_ << ",";
 
       // output radar measurement in cartesian coordinates
       float ro = measurement_pack_list[k].raw_measurements_(0);
       float phi = measurement_pack_list[k].raw_measurements_(1);
-      out_file_ << ro * cos(phi) << "\t"; // px measurement
-      out_file_ << ro * sin(phi) << "\t"; // py measurement
+      out_file_ << ro * cos(phi) << ","; // px measurement
+      out_file_ << ro * sin(phi) << ","; // py measurement
     }
 
     // output the ground truth
-    out_file_ << gt_pack_list[k].gt_values_(0) << "\t";
-    out_file_ << gt_pack_list[k].gt_values_(1) << "\t";
-    out_file_ << gt_pack_list[k].gt_values_(2) << "\t";
+    out_file_ << gt_pack_list[k].gt_values_(0) << ",";
+    out_file_ << gt_pack_list[k].gt_values_(1) << ",";
+    out_file_ << gt_pack_list[k].gt_values_(2) << ",\t";
     out_file_ << gt_pack_list[k].gt_values_(3) << "\n";
 
     // convert ukf x vector to cartesian to compare to ground truth
